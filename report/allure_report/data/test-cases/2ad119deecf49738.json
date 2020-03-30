@@ -1,0 +1,121 @@
+{
+  "uid" : "2ad119deecf49738",
+  "name" : "test_search_keyword[test_space]",
+  "fullName" : "test_cases.test_search.TestSearch#test_search_keyword[test_space]",
+  "historyId" : "7acefac5df9827d756d7ee6a3add25be",
+  "time" : {
+    "start" : 1585575725896,
+    "stop" : 1585575729552,
+    "duration" : 3656
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"bf57a3cda41cfafa17540b6e0c5f276b\")>)",
+  "statusTrace" : "self = <test_cases.test_search.TestSearch object at 0x105197a90>\nget_browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"bf57a3cda41cfafa17540b6e0c5f276b\")>\nkeyword = ' '\n\n    @pytest.mark.parametrize(\n        \"keyword\",\n        [\n            \"中文\",\n            \"test\",\n            \" \",\n        ],\n        ids=[\"test_chinese\", \"test_english\", \"test_space\"]\n    )\n    def test_search_keyword(self, get_browser,keyword):\n        get_browser.get(\"https://www.baidu.com\")\n>       assert BaiduSearchBusiness(get_browser).search_keyword(keyword)\nE       assert False\nE        +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>>(' ')\nE        +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>.search_keyword\nE        +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"bf57a3cda41cfafa17540b6e0c5f276b\")>)\n\ntest_cases/test_search.py:24: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_browser",
+    "time" : {
+      "start" : 1585575714785,
+      "stop" : 1585575717737,
+      "duration" : 2952
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"bf57a3cda41cfafa17540b6e0c5f276b\")>)",
+    "statusTrace" : "self = <test_cases.test_search.TestSearch object at 0x105197a90>\nget_browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"bf57a3cda41cfafa17540b6e0c5f276b\")>\nkeyword = ' '\n\n    @pytest.mark.parametrize(\n        \"keyword\",\n        [\n            \"中文\",\n            \"test\",\n            \" \",\n        ],\n        ids=[\"test_chinese\", \"test_english\", \"test_space\"]\n    )\n    def test_search_keyword(self, get_browser,keyword):\n        get_browser.get(\"https://www.baidu.com\")\n>       assert BaiduSearchBusiness(get_browser).search_keyword(keyword)\nE       assert False\nE        +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>>(' ')\nE        +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>.search_keyword\nE        +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"bf57a3cda41cfafa17540b6e0c5f276b\")>)\n\ntest_cases/test_search.py:24: AssertionError",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1585575729617,
+        "stop" : 1585575730053,
+        "duration" : 436
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7bee300a9d1dd40c",
+        "name" : "失败截图",
+        "source" : "7bee300a9d1dd40c.png",
+        "type" : "image/png",
+        "size" : 103590
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_browser::0",
+    "time" : {
+      "start" : 1585575730058,
+      "stop" : 1585575731114,
+      "duration" : 1056
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSearch"
+  }, {
+    "name" : "host",
+    "value" : "liqingMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "49422-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.test_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "keyword",
+    "value" : "' '"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ad119deecf49738.json",
+  "parameterValues" : [ "' '" ]
+}

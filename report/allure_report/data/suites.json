@@ -1,0 +1,53 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_cases",
+    "children" : [ {
+      "name" : "test_search",
+      "children" : [ {
+        "name" : "TestSearch",
+        "children" : [ {
+          "name" : "test_search_keyword[test_chinese]",
+          "uid" : "488b738e7fdf0ea2",
+          "parentUid" : "2bdd27cc9c50623c975e0515b4b9d66a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1585578217423,
+            "stop" : 1585578222390,
+            "duration" : 4967
+          },
+          "flaky" : true,
+          "parameters" : [ "'中文'" ]
+        }, {
+          "name" : "test_search_keyword[test_english]",
+          "uid" : "e6ce1a55fc96b126",
+          "parentUid" : "2bdd27cc9c50623c975e0515b4b9d66a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1585578222397,
+            "stop" : 1585578225943,
+            "duration" : 3546
+          },
+          "flaky" : false,
+          "parameters" : [ "'test'" ]
+        }, {
+          "name" : "test_search_keyword[test_space]",
+          "uid" : "2d3ac66d21ba7b3b",
+          "parentUid" : "2bdd27cc9c50623c975e0515b4b9d66a",
+          "status" : "failed",
+          "time" : {
+            "start" : 1585578225947,
+            "stop" : 1585578229666,
+            "duration" : 3719
+          },
+          "flaky" : true,
+          "parameters" : [ "' '" ]
+        } ],
+        "uid" : "2bdd27cc9c50623c975e0515b4b9d66a"
+      } ],
+      "uid" : "f3da630c81d263581937811192932784"
+    } ],
+    "uid" : "10075452c99ff4a1bfbce955ca922247"
+  } ]
+}

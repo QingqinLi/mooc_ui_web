@@ -1,0 +1,102 @@
+{
+  "uid" : "73c332e8e20c6c27",
+  "name" : "test_search_keyword[test_english]",
+  "fullName" : "test_cases.test_search.TestSearch#test_search_keyword[test_english]",
+  "historyId" : "a9d18cad93edb94c9c261f95dd5669f8",
+  "time" : {
+    "start" : 1585578083760,
+    "stop" : 1585578098037,
+    "duration" : 14277
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_browser",
+    "time" : {
+      "start" : 1585578063655,
+      "stop" : 1585578066961,
+      "duration" : 3306
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ef7a91cd814b01fe",
+      "name" : "log",
+      "source" : "ef7a91cd814b01fe.txt",
+      "type" : "text/plain",
+      "size" : 3452
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_browser::0",
+    "time" : {
+      "start" : 1585578108050,
+      "stop" : 1585578108272,
+      "duration" : 222
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSearch"
+  }, {
+    "name" : "host",
+    "value" : "liqingMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "50056-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.test_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "keyword",
+    "value" : "'test'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "73c332e8e20c6c27.json",
+  "parameterValues" : [ "'test'" ]
+}

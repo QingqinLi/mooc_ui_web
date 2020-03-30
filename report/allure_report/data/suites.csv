@@ -1,0 +1,4 @@
+"Status","Name","Duration in ms","Description"
+"passed","test_cases.test_search.TestSearch#test_search_keyword[test_english]","3546",""
+"passed","test_cases.test_search.TestSearch#test_search_keyword[test_chinese]","4967",""
+"failed","test_cases.test_search.TestSearch#test_search_keyword[test_space]","3719",""

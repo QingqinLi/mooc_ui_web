@@ -1,0 +1,4 @@
+*.html
+*.log
+.idea/
+__pycache__/
