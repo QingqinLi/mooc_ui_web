@@ -1,0 +1,161 @@
+{
+  "uid" : "a44d438b62c724ee",
+  "name" : "test_search_keyword[test_chinese]",
+  "fullName" : "test_cases.test_search.TestSearch#test_search_keyword[test_chinese]",
+  "historyId" : "e66826ead6adff4ca88c70d01b9dba34",
+  "time" : {
+    "start" : 1585580594460,
+    "stop" : 1585580599024,
+    "duration" : 4564
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "get_browser",
+    "time" : {
+      "start" : 1585580592632,
+      "stop" : 1585580594458,
+      "duration" : 1826
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "get_browser::0",
+    "time" : {
+      "start" : 1585580606340,
+      "stop" : 1585580606433,
+      "duration" : 93
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSearch"
+  }, {
+    "name" : "host",
+    "value" : "liqingMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "50691-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.test_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "keyword",
+    "value" : "'中文'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a6663dfd75be8c14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585578217423,
+        "stop" : 1585578222390,
+        "duration" : 4967
+      }
+    }, {
+      "uid" : "962fcf8ffab81e7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a31bcc0>>('中文')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a31bcc0>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a31bcc0>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a31bcc0> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"765096cf6313524ed855959d1d87d703\")>)",
+      "time" : {
+        "start" : 1585578066963,
+        "stop" : 1585578082764,
+        "duration" : 15801
+      }
+    }, {
+      "uid" : "9b2f10121fbee551",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585577936004,
+        "stop" : 1585577940233,
+        "duration" : 4229
+      }
+    }, {
+      "uid" : "b0085892ae165337",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585577843855,
+        "stop" : 1585577848683,
+        "duration" : 4828
+      }
+    }, {
+      "uid" : "c318284426b9dd6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585575898399,
+        "stop" : 1585575902589,
+        "duration" : 4190
+      }
+    }, {
+      "uid" : "b2a4b2a99dcf5aa1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585575766337,
+        "stop" : 1585575771479,
+        "duration" : 5142
+      }
+    }, {
+      "uid" : "dd0f38c0f1de8084",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585575717739,
+        "stop" : 1585575722204,
+        "duration" : 4465
+      }
+    }, {
+      "uid" : "598cfa6d8506a9fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585574683069,
+        "stop" : 1585574691109,
+        "duration" : 8040
+      }
+    }, {
+      "uid" : "34aa5eff07abf4d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585574582131,
+        "stop" : 1585574586509,
+        "duration" : 4378
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a44d438b62c724ee.json",
+  "parameterValues" : [ "'中文'" ]
+}

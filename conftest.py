@@ -6,6 +6,7 @@ __author__ = 'qing.li'
 import pytest
 from selenium import webdriver
 import allure
+from settings import RUN_MODE
 
 
 browser = 'Chrome'
@@ -52,9 +53,18 @@ def get_browser():
     global driver
     if not driver:
         if browser == 'Chrome':
-            driver = webdriver.Chrome()
+            if RUN_MODE == 'DEBUG':
+                driver = webdriver.Chrome()
+            else:
+                # 设置无界面运行模式
+                chrome_options = webdriver.ChromeOptions()
+                chrome_options.add_argument("--headless")
+                chrome_options.add_argument("--disable-gpu")
+                chrome_options.add_argument("--no-sandbox")
+                driver = webdriver.Chrome(chrome_options=chrome_options)
         else:
             driver = webdriver.Firefox()
+        driver.maximize_window()
     yield driver
     driver.quit()
     return driver

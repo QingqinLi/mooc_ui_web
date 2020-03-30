@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2d3ac66d21ba7b3b",
+      "uid" : "4b0d47c13e7059ae",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a48b470>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a48b470>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a48b470>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a48b470> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"b8ed5fa7115d27a586a951d5b87102ae\")>)",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"992a5ef5640327f82f6c63d6a80c373d\")>)",
       "time" : {
-        "start" : 1585578225947,
-        "stop" : 1585578229666,
-        "duration" : 3719
+        "start" : 1585580602491,
+        "stop" : 1585580605882,
+        "duration" : 3391
       }
     } ]
   },
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e6ce1a55fc96b126",
+      "uid" : "1963c5c2981b42fb",
       "status" : "passed",
       "time" : {
-        "start" : 1585578222397,
-        "stop" : 1585578225943,
-        "duration" : 3546
+        "start" : 1585580599030,
+        "stop" : 1585580602488,
+        "duration" : 3458
       }
     } ]
   },
@@ -48,12 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "488b738e7fdf0ea2",
+      "uid" : "a44d438b62c724ee",
       "status" : "passed",
       "time" : {
-        "start" : 1585578217423,
-        "stop" : 1585578222390,
-        "duration" : 4967
+        "start" : 1585580594460,
+        "stop" : 1585580599024,
+        "duration" : 4564
       }
     } ]
   }

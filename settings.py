@@ -6,3 +6,4 @@ __author__ = 'qing.li'
 import os
 
 BASE_DIR = os.path.dirname(__file__)
+RUN_MODE = 'LINE'

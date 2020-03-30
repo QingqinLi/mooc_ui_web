@@ -29,11 +29,11 @@ class RunTest:
                      '-v',
                      '-s',
                      '--html='+file_path,
-                     '--alluredir='+allure_reports])
-        cmd = "allure generate "+allure_reports+" -o "+allure_report + " --clean"
-        print("cmd", cmd)
-        result = self.cmd.execute_result_cmd(cmd)
-        print("end", result)
+                     '--alluredir='+allure_reports,
+                     '--reruns', '1'])
+        # 本地生成allure报告，jenkins配置allure， 不需要执行命令
+        # cmd = "allure generate "+allure_reports+" -o "+allure_report + " --clean"
+        # result = self.cmd.execute_result_cmd(cmd)
         self.email_util.send_email(file_path)
         self.alert.send_text("ui测试完成, 已发送邮件")
         self.logger.info("ui测试完成，邮件已发送")

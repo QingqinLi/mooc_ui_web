@@ -1,0 +1,208 @@
+{
+  "uid" : "4b0d47c13e7059ae",
+  "name" : "test_search_keyword[test_space]",
+  "fullName" : "test_cases.test_search.TestSearch#test_search_keyword[test_space]",
+  "historyId" : "7acefac5df9827d756d7ee6a3add25be",
+  "time" : {
+    "start" : 1585580602491,
+    "stop" : 1585580605882,
+    "duration" : 3391
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"992a5ef5640327f82f6c63d6a80c373d\")>)",
+  "statusTrace" : "self = <test_cases.test_search.TestSearch object at 0x10a4852b0>\nget_browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"992a5ef5640327f82f6c63d6a80c373d\")>\nkeyword = ' '\n\n    @pytest.mark.parametrize(\n        \"keyword\",\n        [\n            \"中文\",\n            \"test\",\n            \" \",\n        ],\n        ids=[\"test_chinese\", \"test_english\", \"test_space\"]\n    )\n    def test_search_keyword(self, get_browser,keyword):\n        get_browser.get(\"https://www.baidu.com\")\n>       assert BaiduSearchBusiness(get_browser).search_keyword(keyword)\nE       assert False\nE        +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>>(' ')\nE        +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>.search_keyword\nE        +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"992a5ef5640327f82f6c63d6a80c373d\")>)\n\ntest_cases/test_search.py:24: AssertionError",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "get_browser",
+    "time" : {
+      "start" : 1585580592632,
+      "stop" : 1585580594458,
+      "duration" : 1826
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"992a5ef5640327f82f6c63d6a80c373d\")>)",
+    "statusTrace" : "self = <test_cases.test_search.TestSearch object at 0x10a4852b0>\nget_browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"992a5ef5640327f82f6c63d6a80c373d\")>\nkeyword = ' '\n\n    @pytest.mark.parametrize(\n        \"keyword\",\n        [\n            \"中文\",\n            \"test\",\n            \" \",\n        ],\n        ids=[\"test_chinese\", \"test_english\", \"test_space\"]\n    )\n    def test_search_keyword(self, get_browser,keyword):\n        get_browser.get(\"https://www.baidu.com\")\n>       assert BaiduSearchBusiness(get_browser).search_keyword(keyword)\nE       assert False\nE        +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>>(' ')\nE        +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588>.search_keyword\nE        +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a485588> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"992a5ef5640327f82f6c63d6a80c373d\")>)\n\ntest_cases/test_search.py:24: AssertionError",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1585580606010,
+        "stop" : 1585580606336,
+        "duration" : 326
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "37efe95a719d0e7c",
+        "name" : "失败截图",
+        "source" : "37efe95a719d0e7c.png",
+        "type" : "image/png",
+        "size" : 76612
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_browser::0",
+    "time" : {
+      "start" : 1585580606340,
+      "stop" : 1585580606433,
+      "duration" : 93
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSearch"
+  }, {
+    "name" : "host",
+    "value" : "liqingMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "50691-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.test_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "keyword",
+    "value" : "' '"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "50dd7cd985601797",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a48b470>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a48b470>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a48b470>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a48b470> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"b8ed5fa7115d27a586a951d5b87102ae\")>)",
+      "time" : {
+        "start" : 1585578225947,
+        "stop" : 1585578229666,
+        "duration" : 3719
+      }
+    }, {
+      "uid" : "2273518bae12222f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a388748>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a388748>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a388748>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a388748> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"765096cf6313524ed855959d1d87d703\")>)",
+      "time" : {
+        "start" : 1585578098041,
+        "stop" : 1585578107638,
+        "duration" : 9597
+      }
+    }, {
+      "uid" : "d3adb90135105e0c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a464390>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a464390>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a464390>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a464390> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"9d3eca29890c7223a217096888e579b5\")>)",
+      "time" : {
+        "start" : 1585577943995,
+        "stop" : 1585577952908,
+        "duration" : 8913
+      }
+    }, {
+      "uid" : "dc436106b92e276",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a5775c0>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a5775c0>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a5775c0>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x10a5775c0> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"538479390a581dd778ac0fead77e5d78\")>)",
+      "time" : {
+        "start" : 1585577852571,
+        "stop" : 1585577856755,
+        "duration" : 4184
+      }
+    }, {
+      "uid" : "ef32f7c1f9a59233",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x105360668>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x105360668>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x105360668>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x105360668> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"99330dcf71be6d3be2031e125dee7c30\")>)",
+      "time" : {
+        "start" : 1585575906215,
+        "stop" : 1585575910101,
+        "duration" : 3886
+      }
+    }, {
+      "uid" : "bb160923a2da9979",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052585c0>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052585c0>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052585c0>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052585c0> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"54d8684ec646ed5bbc71257264c2ff1c\")>)",
+      "time" : {
+        "start" : 1585575775128,
+        "stop" : 1585575779028,
+        "duration" : 3900
+      }
+    }, {
+      "uid" : "6a5739147b427874",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052625f8> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"bf57a3cda41cfafa17540b6e0c5f276b\")>)",
+      "time" : {
+        "start" : 1585575725896,
+        "stop" : 1585575729552,
+        "duration" : 3656
+      }
+    }, {
+      "uid" : "8bdbe3de5d34788a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1051571d0>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1051571d0>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1051571d0>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1051571d0> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"947468aee4375801778c1ef185fcce6e\")>)",
+      "time" : {
+        "start" : 1585574694685,
+        "stop" : 1585574698757,
+        "duration" : 4072
+      }
+    }, {
+      "uid" : "2ff3dc7c2581e7d5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052722b0>>(' ')\n +    where <bound method BaiduSearchBusiness.search_keyword of <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052722b0>> = <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052722b0>.search_keyword\n +      where <bussiness.baidu_search_business.BaiduSearchBusiness object at 0x1052722b0> = BaiduSearchBusiness(<selenium.webdriver.chrome.webdriver.WebDriver (session=\"173e195867eca8fbcde5b45d606c5bfa\")>)",
+      "time" : {
+        "start" : 1585574590098,
+        "stop" : 1585574593906,
+        "duration" : 3808
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "4b0d47c13e7059ae.json",
+  "parameterValues" : [ "' '" ]
+}
