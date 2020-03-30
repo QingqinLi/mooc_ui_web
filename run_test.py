@@ -30,8 +30,8 @@ class RunTest:
                      '-s',
                      '--html='+file_path,
                      '--alluredir='+allure_reports,
-                     '--reruns', '2',
-                     '--reruns-delay', '2'])
+                     '--reruns', '1',
+                     '--reruns-delay', '3'])
         # 本地生成allure报告，jenkins配置allure， 不需要执行命令
         # cmd = "allure generate "+allure_reports+" -o "+allure_report + " --clean"
         # result = self.cmd.execute_result_cmd(cmd)
